@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<source>
+    {% for job in jobs %}
+    <job>
+        <title>{{ job.title }}</title>
+        <company>{{ job.company }}</company>
+        <location>{{ job.location }}</location>
+        <description><![CDATA[{{ job.description }}]]></description>
+        <date>{{ job.date_posted|date:"Y-m-d" }}</date>
+    </job>
+    {% endfor %}
+</source>
